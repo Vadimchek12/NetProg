@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 
     sockaddr_in * self_addr = new (sockaddr_in);
     self_addr->sin_family = AF_INET;
-    self_addr->sin_port = htons(44214);
+    self_addr->sin_port = htons(12092);
     self_addr->sin_addr.s_addr = inet_addr("127.0.0.1");
 
     int b = bind(s,(const sockaddr*) self_addr,sizeof(sockaddr_in));
